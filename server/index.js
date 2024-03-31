@@ -8,7 +8,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin:["https://sokalrproject.vercel.app"],
+    origin:[""],
     methods: ["POST" , "GET"],
     credential:true
   }
