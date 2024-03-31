@@ -18,7 +18,7 @@ function signup() {
 
         if (password == Confirmpassword) {
            
-            axios.post('https://skolarproject-api.vercel.app ', {name ,email ,password})
+            axios.post('https://skolarproject-api.vercel.app/register ', {name ,email ,password})
             .then (result => {console.log(result)
                 navigate('/Login')
             })
