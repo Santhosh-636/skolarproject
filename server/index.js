@@ -22,6 +22,10 @@ mongoose.connect("mongodb+srv://SanthoshR:Santhu9632@cluster0.2a3hy3o.mongodb.ne
     console.error("Error connecting to MongoDB:", err);
   });
 
+
+  app.get("/" ,(req ,res )=>{
+    res.json("helloe");
+  })
   app.post('/Login' ,(req, res)=> {
     const {email ,password}= req.body;
     UserModel.findOne({email: email})
