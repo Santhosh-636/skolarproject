@@ -36,7 +36,7 @@ mongoose.connect("mongodb+srv://SanthoshR:Santhu9632@cluster0.2a3hy3o.mongodb.ne
             }
             else{
                 
-                res.json("The Password is incorrect" )
+                res.json("The Password is ok incorrect" )
                
             }
         } else{
