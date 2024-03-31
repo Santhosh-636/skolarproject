@@ -5,10 +5,16 @@ const cors = require("cors");
 const UserModel = require('./models/User');
 const app = express();
 
-app.use(express.json());
-app.use(cors());
 
-mongoose.connect("mongodb://127.0.0.1:27017/User", { useNewUrlParser: true, useUnifiedTopology: true })
+app.use(cors(
+  {
+    origin:["https://sokalrproject.vercel.app"],
+    methods: ["POST" , "GET"],
+    credential:true
+  }
+));
+app.use(express.json());
+mongoose.connect("mongodb+srv://SanthoshR:Santhu9632@cluster0.2a3hy3o.mongodb.net/User", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log("MongoDB connected successfully");
   })
