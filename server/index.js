@@ -8,7 +8,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin:["https://skolarproject-frontend.vercel.app/register"],
+    origin:["https://skolarproject-frontend.vercel.app/"],
     methods: ["POST" , "GET"],
     credential:true
   }
